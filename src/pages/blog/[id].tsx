@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
+import rehypeRaw from "rehype-raw";
+
 
 type Props = { data: any }
 
@@ -15,7 +17,7 @@ const index = ({ data }: Props) => {
         </p>
       </div>
       <div className='max-w-screen-xl mx-auto px-20 py-10'>
-        <ReactMarkdown className='prose'>
+        <ReactMarkdown className='prose' rehypePlugins={[rehypeRaw]} >
           {data.Content}
         </ReactMarkdown>
       </div>

@@ -19,6 +19,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.5",
+    "rehype-raw": "^6.1.1",
     "remark": "^14.0.2",
     "remark-html": "^15.0.2",
     "tailwindcss-markdown": "^1.0.1",
